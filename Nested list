@@ -1,0 +1,22 @@
+for i,k in list:
+    listscore.append(i)
+    listname.append(k)
+a=min(listscore)
+c=listscore.count(a)
+for d in range(c):       
+    b=listscore.index(a)
+    listscore.remove(a)
+    listname.pop(b)
+    
+e=min(listscore)
+f=listscore.count(e)
+for g in range(f):
+    h=listscore.index(e)
+    i=listname[h]
+    final.append(i)
+    listname.pop(h)
+    listscore.remove(e)
+
+final.sort()
+for k in final:
+    print(k)
