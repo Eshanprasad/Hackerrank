@@ -1,0 +1,5 @@
+# question : n=3
+# solution 123
+
+for i in range(1,n+1):
+    print(i,end="")
