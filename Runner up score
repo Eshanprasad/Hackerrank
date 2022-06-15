@@ -1,0 +1,10 @@
+l=[]
+for i in arr:
+    l.append(i)
+l.sort(reverse=True)
+
+p=l.count(max(l))
+for j in range(p):
+    l.pop(0)
+    
+print(l[0])
