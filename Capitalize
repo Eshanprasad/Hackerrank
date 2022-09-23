@@ -1,0 +1,21 @@
+"""
+Sample Input
+chris alan
+
+
+Sample Output
+Chris Alan
+"""
+
+
+# Complete the solve function below.
+def solve(s):
+    l = list(s)
+    for i in range(len(l)):
+        if i == 0:
+            a = l[i]
+            l[i] = a.upper()
+        if l[i] == ' ':
+            b = l[i+1]
+            l[i+1] = b.upper()
+    return ''.join(l)
